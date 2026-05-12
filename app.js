@@ -1,23 +1,16 @@
-import { app } from './firebase.js';
+<body>
 
-import {
-  getAuth,
-  signInWithEmailAndPassword
-} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+  <div class="login-box">
+    <h1>POS LOGIN</h1>
 
-const auth = getAuth(app);
+    <input type="email" id="email" placeholder="Email">
 
-window.login = function () {
+    <input type="password" id="password" placeholder="Password">
 
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
+    <button onclick="login()">Login</button>
+  </div>
 
-  signInWithEmailAndPassword(auth, email, password)
-    .then(() => {
-      alert("Login Success");
-    })
-    .catch((error) => {
-      alert(error.message);
-    });
+  <script type="module" src="firebase.js"></script>
+  <script type="module" src="app.js"></script>
 
-}
+</body>
