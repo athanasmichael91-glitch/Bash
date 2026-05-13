@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POS LOGIN</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS LOGIN</title>
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="login-box">
-    <h1>POS LOGIN</h1>
+    <div class="login-box">
+        <h1>POS LOGIN</h1>
 
-    <input type="email" id="email" placeholder="Enter Email">
+        <input type="email" id="email" placeholder="Enter Email">
 
-    <input type="password" id="password" placeholder="Enter Password">
+        <input type="password" id="password" placeholder="Enter Password">
 
-    <button onclick="login()">Login</button>
-  </div>
+        <button onclick="login()">Login</button>
+    </div>
 
-  <script type="module" src="firebase.js"></script>
-  <script type="module" src="app.js"></script>
+    <script type="module" src="firebase.js"></script>
+    <script type="module" src="app.js"></script>
+
+    <script>
+    function login() {
+        window.location.href = "dashboard.html";
+    }
+    </script>
 
 </body>
 </html>
