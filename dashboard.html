@@ -1,116 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>POS Dashboard</title>
+<div class="dashboard">
+    <h1>Dashboard</h1>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <div class="dashboard">
-
-    <div class="topbar">
-      <h1>POS Dashboard</h1>
-
-      <button class="logout-btn" onclick="logout()">
-        Logout
-      </button>
-    </div>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Total Sales</h3>
+    <div class="card">
+        <h2>Total Sales</h2>
         <p>TZS 0</p>
-      </div>
-
-      <div class="card">
-        <h3>Products</h3>
-        <p>0</p>
-      </div>
-
-      <div class="card">
-        <h3>Orders</h3>
-        <p>0</p>
-      </div>
-
-      <div class="card">
-        <h3>Customers</h3>
-        <p>0</p>
-      </div>
-
     </div>
 
     <div class="card">
-
-      <h2>Add Product</h2>
-
-      <input type="text" id="productName" placeholder="Product Name">
-
-      <input type="number" id="productPrice" placeholder="Product Price">
-
-      <button class="save-btn" onclick="saveProduct()">
-        Save Product
-      </button>
-
+        <h2>Products</h2>
+        <p>0</p>
     </div>
 
     <div class="card">
-
-      <h2>Product List</h2>
-
-      <table>
-
-        <thead>
-          <tr>
-            <th>Product</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-
-        <tbody id="productTable">
-        </tbody>
-
-      </table>
-
+        <h2>Orders</h2>
+        <p>0</p>
     </div>
 
-  </div>
-
-  <script>
-
-    function saveProduct() {
-
-      let name = document.getElementById("productName").value;
-      let price = document.getElementById("productPrice").value;
-
-      if(name === "" || price === ""){
-        alert("Jaza taarifa zote");
-        return;
-      }
-
-      let table = document.getElementById("productTable");
-
-      table.innerHTML += `
-        <tr>
-          <td>${name}</td>
-          <td>TZS ${price}</td>
-        </tr>
-      `;
-
-      document.getElementById("productName").value = "";
-      document.getElementById("productPrice").value = "";
-
-    }
-
-    function logout(){
-      window.location.href = "index.html";
-    }
-
-  </script>
-
-</body>
-</html>
+    <div class="card">
+        <h2>Customers</h2>
+        <p>0</p>
+    </div>
+</div>
