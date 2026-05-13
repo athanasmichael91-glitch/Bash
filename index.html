@@ -3,30 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POS LOGIN</title>
+    <title>POS Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="login-box">
-        <h1>POS LOGIN</h1>
+    <div class="dashboard">
 
-        <input type="email" id="email" placeholder="Enter Email">
+        <h1>Dashboard</h1>
 
-        <input type="password" id="password" placeholder="Enter Password">
+        <div class="cards">
 
-        <button onclick="login()">Login</button>
+            <div class="card">
+                <h2>Total Sales</h2>
+                <p>TZS 0</p>
+            </div>
+
+            <div class="card">
+                <h2>Products</h2>
+                <p>0</p>
+            </div>
+
+            <div class="card">
+                <h2>Orders</h2>
+                <p>0</p>
+            </div>
+
+            <div class="card">
+                <h2>Customers</h2>
+                <p>0</p>
+            </div>
+
+        </div>
+
     </div>
 
-    <script type="module" src="firebase.js"></script>
-    <script type="module" src="app.js"></script>
-
-    <script>
-function login() {
-    window.location.href = "dashboard.html";
-}
-</script>
 </body>
 </html>
