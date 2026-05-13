@@ -1,31 +1,25 @@
 body{
-  font-family: Arial;
-  background: #f2f2f2;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  height:100vh;
+    background:#0f172a;
+    color:white;
+    font-family:Arial;
+    margin:0;
+    padding:20px;
 }
 
-.login-box{
-  background:white;
-  padding:20px;
-  border-radius:10px;
-  width:300px;
-  box-shadow:0 0 10px rgba(0,0,0,0.2);
+.dashboard{
+    background:#1e293b;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
 }
 
-input{
-  width:100%;
-  padding:10px;
-  margin-top:10px;
+h1{
+    color:#38bdf8;
 }
 
-button{
-  width:100%;
-  padding:10px;
-  margin-top:15px;
-  background:black;
-  color:white;
-  border:none;
+.card{
+    background:#334155;
+    padding:15px;
+    margin-top:15px;
+    border-radius:10px;
 }
